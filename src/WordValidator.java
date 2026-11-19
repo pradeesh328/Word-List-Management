@@ -9,6 +9,9 @@ public class WordValidator {
         if (input == null || input.trim().isEmpty()) {
             return "EMPTY";
         }
+        if (!input.trim().matches("[a-zA-Z]+")) {
+    return "INVALID";
+}
 
         String word = input.trim().toLowerCase();
 
